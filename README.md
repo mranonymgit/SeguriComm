@@ -26,21 +26,19 @@ Para los primeros pasos, es necesario activar el entorno virtual para poder trab
 Paro eso, hay que hacer lo siguiente:
 Como primer paso debemos crear el entorno virtual, en este caso 'venv' con el siguiente comando en la terminal:
 - python3 -m venv venv
-
 Posteriormente debemos activar el entorno con el siguiente comando:
-
 - source venv/bin/activate
-
 De esta manera ya podemos hacer cambios en el backend sin ninguna complicación. Además poder instalar nuevas librerias sin afectar todo el proyecto.
-
 Para poder salir del entorno virtual y modificar otra parte del proyecto es con el comando:
-
 - deactivate
-
 Otro de los comandos que se utilizan durante el proyecto es el comando 'pip' el cual nos permite instalar librerias y paquetes nuevos, su sintaxis es la siguiente:
-
 - pip install nombre_paquete
-
 Para crear un archivo donde guardar las dependencias que utiliazará el proyecto se utiliza el siguiente comando:
 - pip freeze > requeriments.txt
 
+## Cómo ejecutar el Backend
+
+```bash
+cd backend
+source venv/bin/activate
+uvicorn app.main:app --reload --port 8000
