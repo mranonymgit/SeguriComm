@@ -47,3 +47,7 @@ Para crear un archivo donde guardar las dependencias que utiliazará el proyecto
 cd backend
 source venv/bin/activate
 uvicorn app.main:app --reload --port 8000
+```
+La API estará disponible en: http://127.0.0.1:8000
+
+Documentación interactiva: http://127.0.0.1:8000/docs
