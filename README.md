@@ -41,13 +41,19 @@ Otro de los comandos que se utilizan durante el proyecto es el comando 'pip' el 
 Para crear un archivo donde guardar las dependencias que utiliazará el proyecto se utiliza el siguiente comando:
 - pip freeze > requeriments.txt
 
-## Cómo ejecutar el Backend
+### Cómo ejecutar el Backend
 
 ```bash
 cd backend
 source venv/bin/activate
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
-La API estará disponible en: http://127.0.0.1:8000
 
-Documentación interactiva: http://127.0.0.1:8000/docs
+La API estará disponible en: http://127.0.0.1:8000Documentación interactiva: http://127.0.0.1:8000/docs
+## Backend - FastAPI
+
+Estado Actual:
+- API RESTfu; funcional con estructura modular (routers + schemas)
+- Router de Usuarios implementado ('/usuarios')
+- Documentación interactiva en '/docs'
+- Preparado para integración con PostgreSQL
